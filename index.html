@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <script src="./script.js" defer></script>
+
+        <title>Explore the World with Our Travel Recommendations</title>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <div class="nav_logo_container">
+                <img src="assets/img/travel.png" class="nav__logo" alt="TavelLogo">
+                <span class="nav__logo_title">Travel Bloom</span>
+                </div>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About Us</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contactus" class="nav__link">Contact Us</a>
+                        </li>
+                        <li class="nav__item">
+                        <!-- Search bar in the nav -->
+                        <div class="search-bar">
+                            <input type="text" id='search_text' placeholder="Enter a destination or keyword" name="search">
+                            <button id='search_recommendation'>Search</button>
+                            <button id="reset-search">Clear</button>
+                        </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+        <section class="travelbackground" id="travelbackground">
+                <!-- <img src="assets/img/home1.jpg" alt="" class="home__img"> -->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <div class="home__data social_media_grid">
+                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                            <img src="assets/img/facebook.png">
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                            <img src="assets/img/instagram.png">
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                            <img src="assets/img/twitter.png">
+                        </a>
+                        <a href="https://youtube.com/" target="_blank" class="home__social-link">
+                            <img src="assets/img/youtube.png">
+                        </a>
+                    </div>
+                    <div class="home__data about__description_section">
+                        <h1 class="home__data-title">Explore  <br> Dream <br>Destinations </h1>
+                        <span class="home__data-subtitle">your personalized travel recommendation website designed to make your adventures unforgettable. 
+                            <br>Whether you're seeking hidden gems in bustling cities, tranquil escapes in nature, or cultural experiences off the beaten path, WanderWise tailors recommendations based on your unique preferences and interests.
+                            <br> From curated travel itineraries to expert tips and local insights, we provide everything you need to plan your next journey with ease and confidence.
+                            <br> Start exploring today and let WanderWise inspire your next adventure!</span>
+                        <a href="#" class="button">Book Now</a>
+
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h2 class="section__title about__title">About Us</h2>
+                        <p class="about__description">we are passionate explorers dedicated to helping you discover the world in the most authentic and enriching way possible. 
+                            <br>Founded by travel enthusiasts with a deep love for adventure, our mission is to simplify the travel planning process while offering personalized recommendations that suit your tastes, budget, and travel style. We believe that every journey is unique, and we strive to provide travelers with insider knowledge, local insights, and expertly curated itineraries to create unforgettable experiences. 
+                            <br>Whether you're a seasoned globetrotter or planning your first trip, WanderWise is here to guide you every step of the way.
+                        </p>
+                        <div class="our_team">
+                        <h2 class="our_team_title"> Our <br>Team</h2>
+                        <span class="teamMember"> <img src="assets/img/man.png"><br>Jon Doe <br> CEO <br></span>
+                        <span class="teamMember"> <img src="assets/img/girl.png"><br>Marie Stewart <br> CTO</span>
+                        <span class="teamMember"> <img src="assets/img/man (1).png"><br>Alan Walker <br> CMO</span>
+
+                        </div>
+                    </div>
+
+                    <div class="about__img">
+                        <div class="about__img-overlay">
+                            <!-- <img src="assets/img/about1.jpg" alt="" class="about__img-one"> -->
+                        </div>
+
+                        <div class="about__img-overlay">
+                            <!-- <img src="assets/img/about2.jpg" alt="" class="about__img-two"> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!--==================== Contact Us ====================-->
+            <section class="contact section" id="contactus">
+                <div class="contact__container container grid">
+                    <div class="contact__data">
+                        <h1 class="section__title Contact__title">Contact Us</h1>
+                        <div class="contactForm">
+                        <form id="contactForm">
+                            <div class="input-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit">Send Message</button>
+                            <div id="form-message" class="form-message"></div>
+                        </form>
+                    </div>
+                    </div>
+
+                    <div class="about__img">
+                        <div class="about__img-overlay">
+                            <!-- <img src="assets/img/about1.jpg" alt="" class="about__img-one"> -->
+                        </div>
+
+                        <div class="about__img-overlay">
+                            <!-- <img src="assets/img/about2.jpg" alt="" class="about__img-two"> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+        </section>
+        </main>
+    </body>
+</html>
